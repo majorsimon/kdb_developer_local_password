@@ -30,3 +30,4 @@ checkPassword: {[user; pass]
   hashed ~ shadowpass
  };
 
+\d .
