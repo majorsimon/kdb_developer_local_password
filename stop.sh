@@ -1,4 +1,7 @@
 #!/bin/bash
+if [[ -z $DEVELOPER_HOME ]]; then
+        DEVELOPER_HOME=$HOME/developer
+fi
 if [[ ! -f $DEVELOPER_HOME/developer.pid ]]; then 
 	>&2 echo "Developer is not running, or its pidfile does not exist..." 
 	exit 1
